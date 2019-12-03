@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZPMMC_MRSWRK</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>MRS Work</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp; &amp; &amp; &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Snapshot Week Start date should be in the future.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Snapshot Week Start date &amp;1 is not start of the week</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Snapshot already exists for start &amp;1 end &amp;2 and snapshot type &amp;3.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Snapshot is overlapping with start &amp;1 end &amp;2 and snapshot type &amp;3</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Snapshot entry does not exist for start &amp;1 end &amp;2 for snapshot type &amp;3</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Snapshot start date cannot be blank</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Snapshot end date cannot be blank</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Snapshot start date &amp;1 is not start of the week</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Snapshot end date &amp;1 is not end of the week</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Snapshot type is required</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>No of weeks not maintained for snapshot type &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>Week range is not valid for start date &amp;1 end &amp;2, snapshot type &amp;3</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>014</MSGNR>
+     <TEXT>Snapshot creation failed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>015</MSGNR>
+     <TEXT>Snapshot deletion failed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>016</MSGNR>
+     <TEXT>Snapshot does not exist for start &amp;1 end &amp;2. Deletion not possible.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>018</MSGNR>
+     <TEXT>Snapshot created successfully with start &amp;1 end &amp;2 and type &amp;3</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>019</MSGNR>
+     <TEXT>Snapshot deleted successfully with start &amp;1 end &amp;2 and type &amp;3</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>020</MSGNR>
+     <TEXT>Maintainance Plant is required</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>021</MSGNR>
+     <TEXT>Reporting week start date is required</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>022</MSGNR>
+     <TEXT>Reporting week end date is required</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>023</MSGNR>
+     <TEXT>No data retrieved for the current selection</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>024</MSGNR>
+     <TEXT>Work Center Hierarchy &amp;1 and plant &amp;2 is not valid</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>025</MSGNR>
+     <TEXT>Workcenter node &amp;1 does not exist in work center hierarchy &amp;2 plant &amp;3</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>026</MSGNR>
+     <TEXT>Benchmark unit is required for operation &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>027</MSGNR>
+     <TEXT>Benchmark time unit &amp;1 is not valid. Only Hours(H) or Days(D) are allowed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>028</MSGNR>
+     <TEXT>Invalid ALV list selection</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>029</MSGNR>
+     <TEXT>UI Controls could not be loaded. Try again.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>030</MSGNR>
+     <TEXT>Hierarchy build failed.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>031</MSGNR>
+     <TEXT>KPI Chart could be loaded. Missing standard text ZPMKPICOLUMN.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>032</MSGNR>
+     <TEXT>Order &amp;1 does not exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>033</MSGNR>
+     <TEXT>Order &amp;1 does not have any notifications.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>034</MSGNR>
+     <TEXT>Error when processing the order &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>039</MSGNR>
+     <TEXT>At least one order should be selected</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>040</MSGNR>
+     <TEXT>Orders selected are not linked to any notifications</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>041</MSGNR>
+     <TEXT>GIS co-ordinates are missing on notifications from the orders selected</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>043</MSGNR>
+     <TEXT>Date range from &amp;1 to &amp;2 is outside the &amp;3 months range</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPMMC_MRSWRK</ARBGB>
+     <MSGNR>044</MSGNR>
+     <TEXT>Controlling Area selection is mandatory</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

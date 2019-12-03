@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_W3HT" serializer_version="v2.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <NAME>ZHTML_ZMRS_DASH_LTEXT</NAME>
+   <TEXT>HTML wrapper for Operation Long Text</TEXT>
+   <PARAMS>
+    <WWWPARAMS>
+     <RELID>HT</RELID>
+     <OBJID>ZHTML_ZMRS_DASH_LTEXT</OBJID>
+     <NAME>filename</NAME>
+     <VALUE>ZHTML_ZMRS_DASH_LTEXT.htm</VALUE>
+    </WWWPARAMS>
+    <WWWPARAMS>
+     <RELID>HT</RELID>
+     <OBJID>ZHTML_ZMRS_DASH_LTEXT</OBJID>
+     <NAME>mimetype</NAME>
+     <VALUE>text/html</VALUE>
+    </WWWPARAMS>
+    <WWWPARAMS>
+     <RELID>HT</RELID>
+     <OBJID>ZHTML_ZMRS_DASH_LTEXT</OBJID>
+     <NAME>fileextension</NAME>
+     <VALUE>.htm</VALUE>
+    </WWWPARAMS>
+   </PARAMS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

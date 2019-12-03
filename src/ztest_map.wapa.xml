@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_WAPA" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <ATTRIBUTES>
+    <APPLNAME>ZTEST_MAP</APPLNAME>
+    <APPLEXT>ZTEST_MAP</APPLEXT>
+    <SECURITY>X</SECURITY>
+    <ORIGLANG>E</ORIGLANG>
+    <MODIFLANG>E</MODIFLANG>
+    <TEXT>Sample Map application</TEXT>
+   </ATTRIBUTES>
+   <PAGES>
+    <item>
+     <ATTRIBUTES>
+      <APPLNAME>ZTEST_MAP</APPLNAME>
+      <PAGEKEY>MAIN.HTM</PAGEKEY>
+      <PAGENAME>main.htm</PAGENAME>
+      <MIMETYPE>text/html</MIMETYPE>
+      <IS_START_PAGE>X</IS_START_PAGE>
+      <LAYOUTLANGU>E</LAYOUTLANGU>
+      <VERSION>A</VERSION>
+      <LANGU>E</LANGU>
+      <DESCRIPT>Main Page</DESCRIPT>
+     </ATTRIBUTES>
+     <EVENT_HANDLERS>
+      <O2PAGEVHS>
+       <APPLNAME>ZTEST_MAP</APPLNAME>
+       <PAGEKEY>MAIN.HTM</PAGEKEY>
+       <EVHANDLER>ONINITIALIZATION</EVHANDLER>
+       <VERSION>A</VERSION>
+       <EVHNAME>OnInitialization</EVHNAME>
+       <SOURCE>
+        <item>* event handler for data retrieval</item>
+        <item>DATA: lv_orders     TYPE string,</item>
+        <item>      lv_aufnr      TYPE aufnr,</item>
+        <item>      lt_order_list TYPE TABLE OF aufnr.</item>
+        <item/>
+        <item>lv_orders = request-&gt;if_http_entity~get_form_field( name = &apos;ORDERS&apos; ).</item>
+        <item>CHECK lv_orders IS NOT INITIAL.</item>
+        <item>SPLIT lv_orders AT &apos;,&apos; INTO TABLE DATA(lt_order).</item>
+        <item/>
+        <item>CHECK lt_order IS NOT INITIAL.</item>
+        <item>LOOP AT lt_order INTO lv_aufnr.</item>
+        <item>  CALL FUNCTION &apos;CONVERSION_EXIT_ALPHA_INPUT&apos;</item>
+        <item>    EXPORTING</item>
+        <item>      input  = lv_aufnr</item>
+        <item>    IMPORTING</item>
+        <item>      output = lv_aufnr.</item>
+        <item/>
+        <item>  APPEND lv_aufnr TO lt_order_list.</item>
+        <item>ENDLOOP.</item>
+        <item/>
+        <item>*  Check if the Google maps Javascript API key is available. This will be a TVARV entry</item>
+        <item>SELECT SINGLE low FROM tvarvc INTO @DATA(lv_apikey)</item>
+        <item> WHERE name EQ &apos;Z_PM_GIS_APIKEY&apos; AND type EQ &apos;P&apos;.</item>
+        <item>IF sy-subrc IS NOT INITIAL OR lv_apikey IS INITIAL.</item>
+        <item>  MESSAGE w038(zpmmc_mrswrk) DISPLAY LIKE &apos;E&apos;.</item>
+        <item>  RETURN.</item>
+        <item>ELSE.</item>
+        <item>  g_apikey = lv_apikey.</item>
+        <item>ENDIF.</item>
+        <item/>
+        <item>TRY .</item>
+        <item>    CALL METHOD zcl_pm_mrs_plboorgsrv=&gt;get_object_list_for_orders</item>
+        <item>      EXPORTING</item>
+        <item>        i_order_list   = lt_order_list</item>
+        <item>      IMPORTING</item>
+        <item>        e_notimap_list = g_notimap_list.</item>
+        <item>  CATCH zcx_pm_mrs_repmgr.</item>
+        <item>ENDTRY.</item>
+       </SOURCE>
+      </O2PAGEVHS>
+     </EVENT_HANDLERS>
+     <PARAMETERS>
+      <O2PAGPARS>
+       <APPLNAME>ZTEST_MAP</APPLNAME>
+       <PAGEKEY>MAIN.HTM</PAGEKEY>
+       <COMPNAME>G_APIKEY</COMPNAME>
+       <VERSION>A</VERSION>
+       <PARDECLTYP>1</PARDECLTYP>
+       <TYPTYPE>1</TYPTYPE>
+       <TYPE>STRING</TYPE>
+       <ALIASNAME>g_apikey</ALIASNAME>
+      </O2PAGPARS>
+      <O2PAGPARS>
+       <APPLNAME>ZTEST_MAP</APPLNAME>
+       <PAGEKEY>MAIN.HTM</PAGEKEY>
+       <COMPNAME>G_NOTIMAP_LIST</COMPNAME>
+       <VERSION>A</VERSION>
+       <PARDECLTYP>1</PARDECLTYP>
+       <TYPTYPE>1</TYPTYPE>
+       <TYPE>TY_T_OBJLIST</TYPE>
+       <ALIASNAME>g_notimap_list</ALIASNAME>
+      </O2PAGPARS>
+     </PARAMETERS>
+     <TYPES>
+      <item>TYPES: ty_t_objlist TYPE TABLE OF zpmstordnotilst.</item>
+     </TYPES>
+    </item>
+   </PAGES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

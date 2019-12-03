@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_PM_MRS_PLBOORGSRV</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>MRS Planning Board additional Functions</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_PM_MRS_PLBOORGSRV</CLSNAME>
+     <CMPNAME>CONVERSION_OPERNO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Operation Conversion Function wrapper</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_PM_MRS_PLBOORGSRV</CLSNAME>
+     <CMPNAME>DISPLAY_ORD_MAP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Display Orders and the notifications related to order on map</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_PM_MRS_PLBOORGSRV</CLSNAME>
+     <CMPNAME>GET_OBJECT_LIST_FOR_ORDERS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Notification Object list for Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_PM_MRS_PLBOORGSRV</CLSNAME>
+     <CMPNAME>HANDLE_DEM_DISP_MAP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handle Demand Display map</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>MRS Order Notification maps</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>CLAS</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>/MRSS/CL_SGU_UI_WORKLIST</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>CLAS</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>/MRSS/CL_SGU_UI_WORKLIST</ORG_MAIN_NAME>
+    <PROGRAMNAME>/MRSS/CL_SGU_UI_WORKLIST======CP</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>/MRSS/CL_SGU_UI_WORKLIST======CP</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\TY:/MRSS/CL_SGU_UI_WORKLIST\ME:CONSTRUCTOR\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>*</item>
+      <item>IF lctrl_toolbar IS BOUND.</item>
+      <item>CALL METHOD lctrl_toolbar-&gt;add_button</item>
+      <item>EXPORTING</item>
+      <item>fcode     = &apos;ZZORDMAP&apos;</item>
+      <item>icon      = &apos;@F2@&apos;</item>
+      <item>butn_type = cntb_btype_button</item>
+      <item>quickinfo = &apos;Display Map&apos;.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>*</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>/MRSS/CL_SGU_UI_WORKLIST======CP</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\TY:/MRSS/CL_SGU_UI_WORKLIST\ME:ON_FUNCTION_SELECTED\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>*</item>
+      <item>IF fcode eq &apos;ZZORDMAP&apos;.</item>
+      <item>CALL METHOD zcl_pm_mrs_plboorgsrv=&gt;handle_dem_disp_map</item>
+      <item>EXPORTING</item>
+      <item>i_worklist  = lctrl_worklist</item>
+      <item>i_workitems = lref_workitems</item>
+      <item>.</item>
+      <item>ENDIF.</item>
+      <item>*</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\TY:/MRSS/CL_SGU_UI_WORKLIST\ME:CONSTRUCTOR\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>6</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+    <item>
+     <FULL_NAME>\TY:/MRSS/CL_SGU_UI_WORKLIST\ME:ON_FUNCTION_SELECTED\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>6</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>2</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>
